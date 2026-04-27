@@ -1,9 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        double result = 0.0f;
+        double result = 0.0;
         float f = 1.0f;
         int p = 1;
-        for (int i = 1; i < 11; i += 1)
+        for (int i = 1; i < 12; i += 1)
         {
             result += p/f;
             p *= 2;

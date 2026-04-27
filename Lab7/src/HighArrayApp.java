@@ -42,7 +42,5 @@ class HighArrayApp
             System.out.println("Maximum key is '" + maxKey + "'" + "or arr is empty");
 
         arr.display(); // Повторный вывод
-
-        ClassDataApp.personMain(new String[0]);
     }
 }

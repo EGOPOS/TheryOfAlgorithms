@@ -1,10 +1,10 @@
 public class Employee {
     private String firstName;
     private String lastName;
-    private float commissionRate;
-    private float grossSales;
+    private double commissionRate;
+    private double grossSales;
 
-    public Employee(String firstName, String lastName, float commissionRate, float grossSales) {
+    public Employee(String firstName, String lastName, double commissionRate, double grossSales) {
         setFirstName(firstName);
         setLastName(lastName);
         setCommissionRate(commissionRate);
@@ -31,16 +31,16 @@ public class Employee {
         this.lastName = lastName;
     }
 
-    public float getCommissionRate() {
+    public double getCommissionRate() {
         return commissionRate;
     }
 
-    public float getGrossSales() {
+    public double getGrossSales() {
         return grossSales;
     }
 
-    public void setCommissionRate(float commissionRate) {
-        if (commissionRate < 0.0f || commissionRate > 1.0f)
+    public void setCommissionRate(double commissionRate) {
+        if (commissionRate < 0.0 || commissionRate > 1.0)
         {
             System.out.println("-- Warning blin -- commissionRate value is invalid '" + commissionRate + "', changed to '0'");
             this.commissionRate = 0;
@@ -49,8 +49,8 @@ public class Employee {
         this.commissionRate = commissionRate;
     }
 
-    public void setGrossSales(float grossSales) {
-        if (grossSales < 0.0f)
+    public void setGrossSales(double grossSales) {
+        if (grossSales < 0.0)
         {
             System.out.println("-- Warning blin -- grossSales value is invalid '" + grossSales + "', changed to '0'");
             this.grossSales = 0;

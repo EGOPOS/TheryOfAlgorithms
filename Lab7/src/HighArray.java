@@ -37,7 +37,7 @@ class HighArray
             return false;
         else // Значение найдено
         {
-            for(int k=j; k<nElems; k++) // Сдвиг последующих элементов
+            for(int k=j; k<nElems-1; k++) // Сдвиг последующих элементов
                 a[k] = a[k+1];
             nElems--; // Уменьшение размера
             return true;
@@ -54,8 +54,7 @@ class HighArray
             return false;
         else
         {
-            long lastElement = a[nElems-1];
-            a[j] = lastElement;
+            a[j] = a[nElems-1];
             nElems -= 1;
             return true;
         }
